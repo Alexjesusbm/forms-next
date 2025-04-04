@@ -10,7 +10,7 @@ export default function Home() {
         <CardTitle></CardTitle>
         <CardDescription></CardDescription>
         <CardFooter>Não Possui conta? <Link>Cadastre-se</Link></CardFooter>
-      </Card> <div>aaaaaaaaaaaaaaaaaaaaa</div>
+      </Card> <div>lauuu</div>
     </div>
   );
 }
