@@ -2,7 +2,6 @@ import React from 'react';
 import { ModeToggle } from '@/app/components/mode-toggle';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
-import { Form } from '@/components/ui/form';
 
 export const Header = () => {
   return (
@@ -11,13 +10,14 @@ export const Header = () => {
         <h1 className='text-2xl'>devstore</h1>
       </div>
       <div>
-        <Form>
+        <form action="">
+          <Search/>
           <Input
             placeholder='Buscar produtos...'
             className=' placeholder:text-muted-foreground'
           >
           </Input>
-        </Form>
+        </form>
       </div>
       <ModeToggle />
     </div>
