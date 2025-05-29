@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { Header } from "@/app/components/header";
 
 export const metadata: Metadata = {
   title: "Forms",
@@ -20,7 +21,10 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem={true}
         >
-          <div>{children}</div>
+          <div>
+            <Header />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
